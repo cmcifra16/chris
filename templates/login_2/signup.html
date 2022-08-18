@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login form</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    </head>
+
+    <body>
+        <div class="container ">
+            <div class="row">            
+                <div class="login-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                     <div class="login-title text-center">
+                      
+                      <a href="../Medical.html">  <img src="../p10.png" alt="" srcset="" width="300px" height="200px  "> </a>   
+                     </div>
+                    <div class="login-content">
+                        <div class="login-header ">
+                            <h3><strong>Welcome,</strong></h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quam numquam</h5>
+                        </div>
+                        <div class="login-body">
+ 
+
+
+                            <form action="JavaScript:void(0)" onsubmit="signup()">
+                                <div class="alert alert-info" style="text-align:center; width:100%;  cursor:pointer" title="Register Yourself">
+                                   
+                
+                                    <!---- Doctor
+                                        First name
+                                        Middle name
+                                        gender
+                                        email
+                                        password
+                                        date of birth
+                                        Specialty
+                                         ---->
+                                </div>
+                                <input type="text"class="form-username form-control " id="fname" placeholder="First Name" required title="First Name">
+                                <br />
+                                <input type="text"class="form-username form-control " id="lname" placeholder="Middle Name" required title="Full Name">
+                                <br />
+                                <input type="text"class="form-username form-control " id="mname" placeholder="Surname" required title="Full Name">
+                                <br />
+                                
+                                <input type="email"class="form-username form-control " id="email" placeholder="Email Address "required title="Email">
+                                <br/>
+                                <input type="password"class="form-username form-control " id="password" placeholder="Password" required title="Password">
+                                <input type="password"class="form-username form-control " id="2password" placeholder="Re-type Password" required title="Password">
+                                <small id="error" style="color:red; float:right; display:none;">password should contain atleast 8 characters!</small>
+                                <br />
+                                <input type="number"class="form-username form-control " id="number" placeholder="Cell number" required title="Number">
+                                <small id="error2" style="color:red; float:right; display:none;">cell number should only of 11 numbers!</small>
+                                
+                                <br />
+                                <br />
+                                <div class="form-group" style="margin:0px; padding:0px;">
+                                    <label for="sel1" style="color:#ff5722">Gender</label>
+                                    <select class="form-control" id="gender" name="sellist1" required title="Gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <br />
+                                <label for="sel1" style="color:#ff5722">Date of Birth</label>
+                                <input type="date"class="form-username form-control " id="age"   required title="Age">
+                                <br />
+                                <p style="color:#ff5722">profile pic
+                                    <span style="color:black; font-size:80%;"> ( 1 x 1 Prefered) </span>
+                                </p>
+                                <input type="file" id="profilePic" required title="Upload Pic">
+                                <br />
+                                <br>
+                                <input type="text"class="form-username form-control " id="specialty" placeholder="Specialty" required title="Full Name">
+                                 
+                                <div class="form-group" style="margin:20px 0px 10px; color:#ff5722">
+                                    <label for="comment">Address :</label>
+                                    <textarea class="form-control" rows="5" id="address" required title="Address"></textarea>
+                                </div>
+                
+                                <button class="btn btn-info" style="width:100%; margin-top:5px;" type="submit" title="Sign up">
+                                    <i class="fa fa-user-circle-o"></i> Create Account</button>
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+                            </form>
+                        </div> <!-- end  login-body -->                     
+                    </div><!-- end  login-content -->  
+                    <div class="login-footer text-center template">
+                        <h5>Have an account?<a href="#" class="bold"> Sign in </a>     </h5>
+                        
+                    </div>
+                </div>  <!-- end  login-container -->      
+
+            </div>
+        </div><!-- end container -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

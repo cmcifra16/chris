@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+h1,
+h2 ,h{
+    font-family: 'Times New Roman', Times, serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+
+}
+    .wrapper{
+        background-image: url(../images/bb.png )  ;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+      background-size: 1900px 1000px;
+        
+         background-attachment: fixed;
+    }
+    .title-triage{
+        font-family: 'Times New Roman', Times, serif;
+    }
+   .main-slider__body{
+     
+    
+    outline-color: rgba(10, 21, 78, 0.5);
+    
+    border-radius: 5px;
+     margin-left:900px;
+ 
+     margin-right:150px;
+    padding:100px;
+    backdrop-filter: blur(1px);
+    box-shadow: 20px 20px 40px 26px rgba(0,0,0,0.2);
+ }
+ 
+.reset{
+    margin-top: -70px;
+        margin-left: 350px;
+    }
+     
+input{
+    font-size: 16px;
+    
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+#submit ,#reset{
+	display: block;
+	 width:300px;
+	height: 50px;
+	border-radius: 20px;
+	border: 1px solid black;
+	background-image: linear-gradient(to right, #04a547, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+#submit:hover,#reset:hover{
+	background-position: right;
+}
+
+
+ 
+
+.s-warapper {
+    height: 200vh;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.logo2 {
+    width: 250px;
+
+
+}
+
+.top,
+.content {
+    background-color: #25c481;
+}
+@media (max-width: 400px) {
+    
+.wrapper {
+    position:inline-block;
+    
+    left: 20px;
+    right: -10px;
+ 
+    transition: 0.3s ease;
+    
+        border: 0;
+        padding:30px;
+         z-index: -1;
+        
+}
+ 
+ 
+ .title-triage{
+     
+    border: 1px solid rgb(250, 250, 250);
+    padding:20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(71, 214, 126);
+    color: white;
+    margin: -20px;
+ }
+ .traige-content-first{
+    margin-top: 20px;
+ }
+label,input,a{
+    
+     font-size:12px;
+     font-weight: bold;
+}
+input{
+    
+    height: 30px;
+}
+ 
+.content-two {
+  margin-top:30px;   
+    
+}
+ 
+
+#submit ,#reset{
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -160px;
+    margin-top:-20px;
+    border: 1px solid;
+     
+}
+
+#reset{
+margin-left:-560px;
+margin-top: 70px;
+}
+}

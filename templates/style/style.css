@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 768px) {
+  main #sidebar {
+    overflow-y: scroll !important; }
+    main #sidebar ul {
+      font-size: 14px !important; }
+    main #sidebar .overlay {
+      height: 120% !important;
+      opacity: 0 !important; } }
+main {
+ font-family: 'Times New Roman', Times, serif;
+  height: auto;
+  width: auto; }
+  main #sidebar {
+    height: 100%;
+    position: fixed;
+    width: 0px;
+    z-index: 1;
+    top: 0;
+    left: -50;
+    background-color:rgb(0, 206, 69);
+    padding-left: -150px !important;
+    overflow-y: auto !important;
+    transition: 0.6s;
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(0, 206, 69);}
+    main #sidebar .btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px; }
+    main #sidebar ul {
+      list-style-type: none;
+      padding-top: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      display: block;
+      transition: 0.6s; }
+      main #sidebar ul h5 {
+        font-weight: bold; }
+      main #sidebar ul li {
+        padding-bottom: 10px; }
+        main #sidebar ul li a {
+          color: #F5F5FD; }
+          main #sidebar ul li a:hover {
+            background-color: #F5F5FD;
+            color: rgb(0, 206, 69);
+        
+          }
+          .himg{
+            width: 30px;
+            height: 30px;
+           } 
+  main #content {
+    position: relative;
+    height: 100% !important;
+    width: 100vw;
+    background-color: #F5F5FD;
+    transition: 0.6s; }
+    main #content .content-in .table {
+      -webkit-box-shadow: 0px 0px 11px 0px rgb(0, 206, 69);
+      -moz-box-shadow: 0px 0px 11px 0px rgb(0, 206, 69);
+      box-shadow: 0px 0px 11px 0px rgb(0, 206, 69);
+      background-color: #ffffff !important; }
+      main #content .content-in .table h4 {
+        color: rgb(0, 206, 69);}
+      main #content .content-in .table .price {
+        font-size: 30px; }
+        main #content .content-in .table .price .dolar {
+          color: rgb(0, 206, 69);}
+    main #content nav {
+      background-color:  rgb(0, 206, 69) !important; }
+      main #content nav .dropdown-menu i {
+        color:rgb(0, 206, 69); }
+      main #content nav .nav-link {
+        color: rgb(0, 0, 0);
+        font-weight: bold; }
+        main #content nav .nav-link:hover {
+          color: #000; }
+      main #content nav .menuAc {
+        position: relative;
+        top: 0;
+        left: 0;
+        border: 2px solid rgb(0, 206, 69);
+        border-radius: 5px;
+        padding: 5px; }
+        main #content nav .menuAc i {
+          font-size: 25px !important;
+        color: #000; }
+      main #content nav .form-inline .btn {
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        background-color: #fff; }
+        main #content nav .form-inline .btn:hover {
+          background-color: rgb(0, 0, 0);
+          color: white; }
+.wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s ease;
+
+}
+
+.s-warapper{
+  height:200vh ;
+}
+/*# sourceMappingURL=style.css.map */
+ 
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: Times New Roman, Times, serif,ans-serif;
+  min-width: 400px;
+  background-color: rgb(0, 206, 69);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+}
+.table thead tr {
+  background-color: rgb(0, 206, 69);
+  color: #ffffff;
+  text-align: left;
+}
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(0, 206, 69);
+}
+.table tbody tr.active-row {
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(0, 206, 69), #83cab3, #87aa9e);
+}
+.avatar1{
+ width: 200px;
+ height: 200px;
+  align-items: center;
+ padding-top: 1cm;
+ padding-left: 1.5cm;
+}
+.navbar {
+  background-color: rgb(0, 206, 69);
+}
+a{
+  color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+.logo2{
+  width: 250px;
+
+  
+}
+.top,.content{
+  background-color: rgb(0, 206, 69);
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/sam1.css">
+    <link rel="stylesheet" href="../style/table.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/panels.css">
+    <script type="javascript" src="calender.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+
+        </script>
+    <title>Document</title>
+</head>
+
+
+<header class="main-header">
+    <div class="head-div">
+        <div class="menu2">
+            <img src="../images/menu1.png" id="btnbtn" alt="">
+
+        </div>
+        <div><img class="logos" src="../images/p10.png" alt=""></div>
+        <div class="mainuser">
+
+            <button class="btn " data-toggle='collapse' data-target='#navR'>
+                <i class="bx bx-user" id="useruser" data-toggle="modal" title="My Account" data-target="#myProfile"></i>
+                 
+            </button>
+        </div>
+        <div class="wrap">
+            <div class="search-main">
+
+                <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button><input type="text"
+                    class="searchTerm" placeholder="What are you looking for?">
+
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<body>
+
+
+    <div class="sidebar">
+
+        <ul class="nav-list-main">
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip-main">Dashboard</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip-main">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip-main">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+                <span class="tooltip-main">Files</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">apppointment</span>
+                </a>
+                <span class="tooltip-main">apppointment</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip-main">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <span class="tooltip-main">Setting</span>
+            </li>
+            <li class="profile-main">
+                <div class="profile-main-details">
+                    <!--<img src="profile-main.jpg" alt="profile-mainImg">-->
+                    <div class="name_job">
+                        <div class="name">Logout</div>
+
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul><div class="profileP" id="profileP"  ></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <br><br>
+
+    <p style="font-size:90%; text-align:center; padding:20px;" id="loader">
+        <i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Please Wait..... Loading Data......
+    </p>
+
+
+
+    <div class="mainBox" style="display:none" id="mainBox">
+
+
+
+        <div class="nav" id="block">
+
+
+            <div class="navContent">
+
+                <p
+                    style="width:100px; height:100px; border-radius:50%; overflow:hidden; border:5px solid white; margin-bottom:5px;">
+                    <img id='profilePic' title="Profile" height="100px;" width="100px;">
+                </p>
+
+                <p style="color:rgb(73, 209, 134);" id="userName" title="Name"></p>
+                <div class="info">
+                    <p style="color:#070101" id="userType" title="Type"></p>
+                    <p style="color:#070101" id="useraddress" title="Type"></p>
+                    <p style="color:#070101" id="userage" title="Type"></p>
+                    <p style="color:#070101" id="userphone" title="Type"></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="header">
+
+
+        
+    </div>
+    <!-------profile------->
+    <div class="contentPanel">
+        <div id="myPost">
+
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="edit">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+ 
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="JavaScript:void(0)" onsubmit="editPost()">
+                        <div class="form-group" style="margin:20px 0px 10px; color:rgb(73, 209, 134);">
+                            <label for="comment">Your Post :</label>
+                            <textarea class="form-control" title="Post" id="acceptorPost" rows="5" id=""
+                                required></textarea>
+                        </div>
+                        <p style="font-size:90%; display:none" id="loaderAcceptor">
+                            <i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Please Wait..
+                        </p>
+                        <button class="btn btn-info" title="Edit" type="submit" style="width:100%;">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" title="Cancel" class="btn btn-danger" data-dismiss="modal"
+                        style="width:100%;">
+                        <i class="fa fa-close"></i> Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myProfile" style="margin:0px auto;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:rgb(73, 209, 134);">My Profile!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="text-align:center;" id="profile">
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" title="Close" class="btn btn-danger" data-dismiss="modal"
+                        style="width:100%;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="containertable">
+        <h2 class="mb-5">Table #5</h2>
+        <div class="table-responsive custom-table-responsive" id="tabletble">
+
+            <table class="table custom-table">
+                <thead>
+                    <tr>
+
+                        <th scope="col">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" class="js-check-all" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+
+                        <th scope="col">ID</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Middle-Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">DateofBirth</th>
+                        <th scope="col">Symptoms</th>
+                        <th scope="col">Result</th>
+                        <th scope="col">Schedule</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr scope="row">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>pending</button></td>
+                    </tr>
+                   
+                    <tr class="active">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>Cancelled</button></td>
+                    </tr>
+                    <tr scope="row">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>pending</button></td>
+                    </tr> <tr scope="row">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>pending</button></td>
+                    </tr> <tr scope="row">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>pending</button></td>
+                    </tr>
+                    <tr class="active">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>Cancelled</button></td>
+                    </tr>  <tr class="active">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>Cancelled</button></td>
+                    </tr>  <tr class="active">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>Cancelled</button></td>
+                    </tr>  <tr class="active">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>Cancelled</button></td>
+                   
+                    <tr scope="row">  <tr scope="row">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>pending</button></td>
+                    </tr> <tr scope="row">  <tr scope="row">
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            1392
+                        </td>
+                        <td>James </td>
+                        <td>Yates</td>
+                        <td>Cruz</td>
+                        <td>Male</td>
+                        <td>1982-09-12</td>
+                          <td>Cold Fever etc.</td>
+                        <td>Negative</td>
+                        <td>20/06/2022-11:22:12</td>
+                        <td><button>pending</button></td>
+                    </tr> <tr scope="row">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closebtnbtn = document.querySelector("#btnbtn");
+
+
+        closebtnbtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menubtnbtnChange();//calling the function(optional)
+        });
+
+
+
+        // following are the code to change sidebar button(optional)
+        function menubtnbtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closebtnbtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closebtnbtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script src="./script/doc.js"></script>
+    <script src="./script/sweetalert.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+</html>
